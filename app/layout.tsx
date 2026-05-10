@@ -30,6 +30,20 @@ export const metadata: Metadata = {
   creator: 'Xtream Ranker',
   publisher: 'Xtream Ranker',
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  icons: {
+    icon: [
+      { url: '/favicon.ico',        sizes: 'any' },
+      { url: '/favicon-16x16.png',  sizes: '16x16',  type: 'image/png' },
+      { url: '/favicon-32x32.png',  sizes: '32x32',  type: 'image/png' },
+      { url: '/favicon-48x48.png',  sizes: '48x48',  type: 'image/png' },
+      { url: '/favicon-192x192.png',sizes: '192x192',type: 'image/png' },
+      { url: '/favicon-512x512.png',sizes: '512x512',type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -37,13 +51,13 @@ export const metadata: Metadata = {
     siteName: 'Xtream Ranker',
     title: 'Xtream Ranker | Digital Marketing Agency UK',
     description: 'SEO, Ads, Web Dev & Social Media — helping UK businesses grow 24/7.',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Xtream Ranker' }],
+    images: [{ url: '/favicon-512x512.png', width: 512, height: 512, alt: 'Xtream Ranker' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Xtream Ranker | Digital Marketing Agency UK',
     description: 'SEO, Ads, Web Dev & Social Media — helping UK businesses grow 24/7.',
-    images: ['/og-image.png'],
+    images: ['/favicon-512x512.png'],
   },
   alternates: { canonical: 'https://xtreamranker.site' },
 }
@@ -73,17 +87,6 @@ const localBusinessSchema = {
   }],
   areaServed: { '@type': 'Country', name: 'United Kingdom' },
   priceRange: '££',
-  hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    name: 'Digital Marketing Services',
-    itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SEO & AI Optimization' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Web Development' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Google Ads & Meta Ads' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Social Media Marketing' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Content Writing' } },
-    ],
-  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -94,8 +97,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        {/* ── Favicons ── */}
+        <link rel="icon"             href="/favicon.ico"         sizes="any" />
+        <link rel="icon"             href="/favicon-16x16.png"   sizes="16x16"   type="image/png" />
+        <link rel="icon"             href="/favicon-32x32.png"   sizes="32x32"   type="image/png" />
+        <link rel="icon"             href="/favicon-48x48.png"   sizes="48x48"   type="image/png" />
+        <link rel="icon"             href="/favicon-192x192.png" sizes="192x192" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+        <link rel="shortcut icon"    href="/favicon.ico" />
+        <meta name="theme-color"     content="#050d1a" />
+        <meta name="msapplication-TileColor"  content="#050d1a" />
+        <meta name="msapplication-TileImage" content="/favicon-192x192.png" />
       </head>
       <body style={{ fontFamily: "'Outfit', sans-serif", backgroundColor: '#050d1a', color: '#c8d6e8' }}>
         <Header />

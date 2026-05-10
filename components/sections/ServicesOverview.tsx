@@ -13,7 +13,7 @@ const SERVICE_IMAGES: Record<string, string> = {
   seo:     '/ai-search-engine-technology-concept-person-using-laptop-with-ai-powered-search-bar-interface.webp',
   web:     '/co-working-team-meeting-concept-businessman-using-smart-phone-and-digital-tablet-and-laptop.webp',
   ads:     '/digital-marketing-commerce-online-sale-concept-businessman-using-laptop-with-ads-dashboard.webp',
-  social:  '/ad-on-website-and-social-media-banner-ads-on-internet-digital-marketing-concept-marketer.webp',
+  social:  '/social-media-marketing-bg.webp',
   content: '/it-man-working-on-notebook-planning-to-increase-website-traffic.webp',
 }
 
