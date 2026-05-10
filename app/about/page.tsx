@@ -96,7 +96,7 @@ export default function AboutPage() {
                   Revenue You Can See in Your Bank Account
                 </h2>
                 <blockquote style={{ borderLeft: '3px solid #d4a017', paddingLeft: '1.25rem', marginBottom: '1.5rem' }}>
-                  <p style={{ color: 'rgba(200,214,232,0.8)', fontSize: '1rem', lineHeight: 1.8, fontStyle: 'italic', fontFamily: "'Cormorant Garamond', serif", fontSize: '1.15rem' }}>
+                  <p style={{ color: 'rgba(200,214,232,0.8)', lineHeight: 1.8, fontStyle: 'italic', fontFamily: "'Cormorant Garamond', serif", fontSize: '1.15rem' }}>
                     &ldquo;To make powerful, results-driven digital marketing accessible to every UK business —
                     from ambitious startups to established enterprises — and to be the agency that delivers
                     growth you can actually see in your bank account.&rdquo;
