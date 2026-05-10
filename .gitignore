@@ -1,3 +1,2 @@
 node_modules
-node_modules/
-.next/git rm -r --cached .next
+.next
